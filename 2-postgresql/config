@@ -1,0 +1,33 @@
+PostgreSQL 8.4.13 configuration
+
+This link is good: 
+http://stackoverflow.com/questions/1564056/how-do-i-import-modules-or-install-extensions-in-postgres-8-4
+
+I assume you have packages 'postgresql' and 'postgresql-contrib' already installed.
+
+Change over to the database owner account.
+From this account you can do anything because you're a superuser/admin.
+$'sudo su postgres'
+
+Change directory to the contrib modules directory, for me:
+/usr/share/postgresql/8.4/contrib
+
+Use 'ls' to see if these modules are in the directory:
+tablefunc
+dict_xsyn
+fuzzystrmatch
+pg_trgm
+cube
+
+I assume you have created the 'book' db, I used this command to create the db:
+'CREATE DATABASE book ENCODING 'UTF8';
+
+Execute the contrib SQL code for each module that we're using, referencing the 'book' db:
+'psql -U postgres -d book -f tablefunc.sql'
+'psql -U postgres -d book -f dict_xsyn.sql'
+'psql -U postgres -d book -f fuzzystrmatch.sql'
+'psql -U postgres -d book -f pg_trgm.sql'
+'psql -U postgres -d book -f cube.sql'
+
+Test that the 'cube' module is loaded, per the book:
+$psql book -c "SELECT '1'::cube;"
