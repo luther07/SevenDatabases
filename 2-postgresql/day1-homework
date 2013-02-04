@@ -1,0 +1,10 @@
+Find
+1. Bookmark the online PostgreSQL FAQ and documents. X
+2. Acquaint yourself with the command-line \? and \h output. X
+3. In the addresses FOREIGN KEY, find in the docs what MATCH FULL means. X
+
+Do
+1. Select all the tables we created (and only those) from pg_class.
+2. Write a query that finds the country name of the LARP Club event. X
+3. Alter the venues table to contain a boolean column called active,
+   with the default value of TRUE.
