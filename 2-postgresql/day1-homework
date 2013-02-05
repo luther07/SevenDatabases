@@ -6,5 +6,5 @@ Find
 Do
 1. Select all the tables we created (and only those) from pg_class. X
 2. Write a query that finds the country name of the LARP Club event. X
-3. Alter the venues table to contain a boolean column called active,
-   with the default value of TRUE.
+3. Alter the venues table to contain a boolean column called active, 
+   with the default value of TRUE. X
