@@ -5,7 +5,7 @@
 -- v = view, 
 -- c = composite type, 
 -- t = TOAST table
-SELECT relname, usename, usesysid, pg_class.*
+SELECT relname
 FROM pg_class INNER JOIN pg_user ON pg_class.relowner=pg_user.usesysid
 WHERE pg_user.usename = 'mjohns07'
 AND relkind = 'r';
