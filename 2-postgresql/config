@@ -31,3 +31,7 @@ Execute the contrib SQL code for each module that we're using, referencing the '
 
 Test that the 'cube' module is loaded, per the book:
 $psql book -c "SELECT '1'::cube;"
+
+We will be using PL/pgSQL for writing stored procedures, therefore execute this command
+as the database owner:
+'CREATE LANGUAGE plpgsql;'
