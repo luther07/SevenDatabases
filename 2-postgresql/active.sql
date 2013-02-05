@@ -1,0 +1,2 @@
+ALTER TABLE venues
+ADD COLUMN active boolean DEFAULT TRUE;
