@@ -1,4 +1,7 @@
-PostgreSQL 8.4.13 configuration
+PostgreSQL 8.4.13 configuration:
+
+In addition to PL/pgSQL, Postgres supports three more core languages for writing
+procedures: Tcl, Perl, and Python.
 
 This link is good: 
 http://stackoverflow.com/questions/1564056/how-do-i-import-modules-or-install-extensions-in-postgres-8-4
