@@ -4,3 +4,4 @@ Find
 2. Find a GUI program to interact with PostgreSQL, such as Navicat.
 
 Do
+1. Create a rule that captures DELETEs on venues and instead sets the active flag (created in the Day 1 homework) to FALSE.
