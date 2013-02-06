@@ -4,4 +4,6 @@ Find
 2. Find a GUI program to interact with PostgreSQL, such as Navicat.
 
 Do
-1. Create a rule that captures DELETEs on venues and instead sets the active flag (created in the Day 1 homework) to FALSE.
+1. Create a rule that captures DELETEs on venues and instead sets the active flag (created in the Day 1 homework) to FALSE. X
+2. A temporary table was not the best way to implement our event calendar pivot table. The generate_series(a, b) function
+returns a set of records, from a to b. Replace the month_count table SELECT with this.
