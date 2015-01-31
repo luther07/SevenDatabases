@@ -29,11 +29,11 @@ I assume you have created the 'book' db, I used this command to create the db:
 'CREATE DATABASE book ENCODING 'UTF8';
 
 Execute the contrib SQL code for each module that we're using, referencing the 'book' db:
-'psql -U postgres -d book -f tablefunc.sql'
-'psql -U postgres -d book -f dict_xsyn.sql'
-'psql -U postgres -d book -f fuzzystrmatch.sql'
-'psql -U postgres -d book -f pg_trgm.sql'
-'psql -U postgres -d book -f cube.sql'
+'psql -U postgres -d book -f tablefunc.sql' or 'create extension tablefunc'
+'psql -U postgres -d book -f dict_xsyn.sql' or 'create extension dict_xsyn'
+'psql -U postgres -d book -f fuzzystrmatch.sql' or 'create extension fuzzystrmatch'
+'psql -U postgres -d book -f pg_trgm.sql' or 'create extension pg_trgm'
+'psql -U postgres -d book -f cube.sql' or 'create extension cube'
 
 Test that the 'cube' module is loaded, per the book:
 $psql book -c "SELECT '1'::cube;"
